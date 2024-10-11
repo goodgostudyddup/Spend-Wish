@@ -1,0 +1,243 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #ffffff;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+main {
+    padding-top: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+}
+
+#searchInput {
+    border-radius: 20px;
+}
+
+#addBillBtn {
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.modal-backdrop.show {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 确保这些样式在文件中存在 */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode .sidebar {
+    background-color: #222;
+}
+
+.dark-mode .sidebar .nav-link {
+    color: #f4f4f4;
+}
+
+.dark-mode .sidebar .nav-link:hover,
+.dark-mode .sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.dark-mode .nav-link {
+    color: #f4f4f4;
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+    color: #007bff;
+}
+
+.dark-mode .card {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.dark-mode .modal-content {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.dark-mode .form-control {
+    background-color: #555;
+    color: #f4f4f4;
+    border-color: #666;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #f4f4f4;
+    border-color: #f4f4f4;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-mode .footer {
+    background-color: #222;
+}
+
+.dark-mode .text-muted {
+    color: #bbb !important;
+}
+
+.dark-mode .sidebar-sticky {
+    background-color: #222;
+}
+
+/* 夜间模式样式 */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+/* 导航栏夜间模式样式 */
+.dark-mode .sidebar {
+    background-color: #222;
+}
+
+.dark-mode .sidebar .nav-link {
+    color: #f4f4f4;
+}
+
+.dark-mode .sidebar .nav-link:hover,
+.dark-mode .sidebar .nav-link.active {
+    color: #007bff;
+}
+
+/* 确保导航栏的背景色在夜间模式下正确显示 */
+.dark-mode .bg-light {
+    background-color: #222 !important;
+}
+
+/* 调整导航栏中文本的颜色 */
+.dark-mode .sidebar .nav-link,
+.dark-mode .sidebar .navbar-brand {
+    color: #f4f4f4;
+}
+
+/* 调整导航栏中图标的颜色 */
+.dark-mode .sidebar .nav-link i {
+    color: #f4f4f4;
+}
+
+/* 调整活动链接的样式 */
+.dark-mode .sidebar .nav-link.active {
+    background-color: #444;
+}
+
+/* 调整悬停效果 */
+.dark-mode .sidebar .nav-link:hover {
+    background-color: #444;
+}
+
+/* 确保其他元素也适应夜间模式 */
+.dark-mode .card {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.dark-mode .modal-content {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.dark-mode .form-control {
+    background-color: #555;
+    color: #f4f4f4;
+    border-color: #666;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #f4f4f4;
+    border-color: #f4f4f4;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-mode .footer {
+    background-color: #222;
+}
+
+.dark-mode .text-muted {
+    color: #bbb !important;
+}
+
+.dark-mode .sidebar-sticky {
+    background-color: #222;
+}
+
+/* 添加更多需要的夜间模式样式 */
